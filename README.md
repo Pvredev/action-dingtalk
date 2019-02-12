@@ -2,11 +2,11 @@
 
 Sends a DingTalk notification. Simple as that.
 
-Image of action
+![Dingtalk Logo](dingtalk-logo.png "Dingtalk Logo")
 
 *Appearance on Dingtalk :*
 
-Image of message at DingTalk
+![Dingtalk message](action-message.png "Dingtalk message")
 
 <hr/>
 
