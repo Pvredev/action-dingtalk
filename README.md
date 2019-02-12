@@ -13,7 +13,7 @@ Sends a DingTalk notification. Simple as that.
 ## Usage
 
 ```hcl
-action "Slack notification" {
+action "Dingtalk notification" {
   uses = "cooperwu/action-dingtalk@master"
   secrets = ["DINGTALK_WEBHOOK"]
   args = "A new commit has been pushed."
