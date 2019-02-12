@@ -1,6 +1,6 @@
-# 🚀 Slack for GitHub Actions
+# DingTalk for GitHub Actions
 
-Sends a Slack notification. Simple as that.
+Sends a DingTalk notification. Simple as that.
 
 ![GitHub Action](action.png "GitHub Action")
 
@@ -8,16 +8,14 @@ Sends a Slack notification. Simple as that.
 
 ![Slack message](slack.png "Slack message")
 
-This GitHub action is part of a list of Actions that are located in an other repo. Feel free to check it out : https://github.com/Ilshidur/actions.
-
 <hr/>
 
 ## Usage
 
 ```hcl
 action "Slack notification" {
-  uses = "Ilshidur/action-slack@master"
-  secrets = ["SLACK_WEBHOOK"]
+  uses = "cooperwu/action-dingtalk@master"
+  secrets = ["DINGTALK_WEBHOOK"]
   args = "A new commit has been pushed."
 }
 ```
@@ -41,25 +39,12 @@ e.g.: `Action called : {{ GITHUB_ACTION }}`
 * `args = "Hello, beautiful ! I ran a GitHub Actions for you <3"`
 * `args = "I showed you my commit. Please respond."`
 
-### Environment variables
-
-* **`SLACK_CHANNEL`** *(optional)* : overrides the default channel of the webhook.
-
 ### Secrets
 
-* **`SLACK_WEBHOOK`**: the Slack webhook URL (**required**, see https://api.slack.com/incoming-webhooks).
+* **`DINGTALK_WEBHOOK`**: the Dingtalk webhook URL (**required**, see https://api.slack.com/incoming-webhooks).
 * That's all.
 
-## Alternatives
+### Credits
 
-Because open source is about everyone :
+This repo is inspired by Ilshidur, and it's forked from his [Slack action](https://github.com/Ilshidur/action-slack). 
 
-https://github.com/marketplace/actions/post-slack-message <br/>
-![](https://img.shields.io/github/stars/pullreminders/slack-action.svg?label=Stars&style=social)
-
-<hr/>
-
-<p align="center">
-  Don't forget to 🌟 Star 🌟 the repo if you like this GitHub Action !<br/>
-  <a href="https://github.com/Ilshidur/action-discord/issues/new">Your feedback is appreciated</a>
-</p>
