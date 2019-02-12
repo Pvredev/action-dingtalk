@@ -1,26 +1,26 @@
 {
-  "name": "action-slack",
-  "version": "1.2.0",
-  "description": "GitHub Action that sends a Slack notification.",
+  "name": "action-dingtalk",
+  "version": "0.0.1",
+  "description": "GitHub Action that sends a Dingtalk notification.",
   "private": true,
   "scripts": {
     "test": "npm test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ilshidur/actions.git"
+    "url": "git+https://github.com/cooperwu/action-dingtalk.git"
   },
   "keywords": [
-    "slack",
+    "dingtalk",
     "github",
     "action"
   ],
-  "author": "Ilshidur",
+  "author": "CooperWu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Ilshidur/actions/issues"
+    "url": "https://github.com/cooperwu/action-dingtalk/issues"
   },
-  "homepage": "https://github.com/Ilshidur/actions#readme",
+  "homepage": "https://github.com/cooperwu/action-dingtalk#readme",
   "dependencies": {
     "axios": "0.18.0",
     "lodash": "4.17.11",
