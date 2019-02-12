@@ -2,11 +2,11 @@
 
 Sends a DingTalk notification. Simple as that.
 
-![GitHub Action](action.png "GitHub Action")
+Image of action
 
-*Appearance on Slack :*
+*Appearance on Dingtalk :*
 
-![Slack message](slack.png "Slack message")
+Image of message at DingTalk
 
 <hr/>
 
@@ -19,10 +19,6 @@ action "Slack notification" {
   args = "A new commit has been pushed."
 }
 ```
-
-**NOTICE :** for stability purposes, it is recommended to use the action with an explicit commit SHA-1 :
-
-`uses = "Ilshidur/action-slack@03941e0"` (=> link to the commits list : https://github.com/Ilshidur/action-slack/commits/master)
 
 ### Arguments
 
