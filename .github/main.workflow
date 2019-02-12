@@ -1,4 +1,4 @@
-workflow "Notification on push" {
+workflow "Send notification on push" {
   on = "push"
   resolves = [
     "Dingtalk notification",
