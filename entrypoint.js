@@ -9,19 +9,17 @@ const message = argv._.join(' ');
 const compiled = _.template(message);
 
 const payload = {
-    username: process.env.GITHUB_ACTION,
-    ...process.env.SLACK_CHANNEL ? { channel: process.env.SLACK_CHANNEL } : {},
+    msgtype: 'text',
     text: `${process.env.GITHUB_REPOSITORY}/${process.env.GITHUB_WORKFLOW} triggered by ${process.env.GITHUB_ACTOR} (${process.env.GITHUB_EVENT_NAME}) :\n${compiled(process.env)}`,
-    icon_url: 'https://raw.githubusercontent.com/quintessence/slack-icons/master/images/github-logo-slack-icon.png',
 };
 
-const url = process.env.SLACK_WEBHOOK;
+const url = process.env.DINGTALK_WEBHOOK;
 
 (async () => {
     console.log('Sending message ...');
     await axios.post(url, querystring.stringify({ payload: JSON.stringify(payload) }), {
         headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
+            'Content-Type': 'application/json'
         }
     });
     console.log('Message sent ! Shutting down ...');
