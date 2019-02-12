@@ -37,10 +37,9 @@ e.g.: `Action called : {{ GITHUB_ACTION }}`
 
 ### Secrets
 
-* **`DINGTALK_WEBHOOK`**: the Dingtalk webhook URL (**required**, see https://api.slack.com/incoming-webhooks).
+* **`DINGTALK_WEBHOOK`**: the Dingtalk webhook URL (**required**, see https://open-doc.dingtalk.com/docs/doc.htm).
 * That's all.
 
 ### Credits
 
-This repo is inspired by Ilshidur, and it's forked from his [Slack action](https://github.com/Ilshidur/action-slack). 
-
+This repo is inspired by Ilshidur, forked from his [Slack action](https://github.com/Ilshidur/action-slack) 
