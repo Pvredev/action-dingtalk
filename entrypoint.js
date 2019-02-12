@@ -15,14 +15,14 @@ const payload = {
     }
 };
 
-console.log('The message content in JSON...');
-console.log(JSON.stringify(payload))
+console.log('The message content in JSON format...');
+console.log(JSON.stringify(payload));
 
 const url = process.env.DINGTALK_WEBHOOK;
 
 (async () => {
     console.log('Sending message ...');
-    await axios.post(url, querystring.stringify({ payload: JSON.stringify(payload) }), {
+    await axios.post(url, JSON.stringify(payload), {
         headers: {
             'Content-Type': 'application/json'
         }
