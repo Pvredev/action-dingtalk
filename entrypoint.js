@@ -13,6 +13,9 @@ const payload = {
     text: `${process.env.GITHUB_REPOSITORY}/${process.env.GITHUB_WORKFLOW} triggered by ${process.env.GITHUB_ACTOR} (${process.env.GITHUB_EVENT_NAME}) :\n${compiled(process.env)}`,
 };
 
+console.log('The message content in JSON...');
+console.log(JSON.stringify(payload))
+
 const url = process.env.DINGTALK_WEBHOOK;
 
 (async () => {
