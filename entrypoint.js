@@ -11,7 +11,7 @@ const compiled = _.template(message);
 const payload = {
     msgtype: 'text',
     text: {
-      content: `${process.env.GITHUB_REPOSITORY}/${process.env.GITHUB_WORKFLOW} triggered by ${process.env.GITHUB_ACTOR} (${process.env.GITHUB_EVENT_NAME}) :\n${compiled(process.env)}`,
+      content: `${process.env.GITHUB_REPOSITORY}/${process.env.GITHUB_WORKFLOW} triggered by ${process.env.GITHUB_ACTOR} (${process.env.GITHUB_EVENT_NAME})`,
     }
 };
 
